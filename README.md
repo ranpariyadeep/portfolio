@@ -185,17 +185,6 @@ npm run build
 
 ---
 
-## Security Notes
-
-⚠️ **Important:**
-- Never commit `.env` files to Git
-- Use strong passwords for admin credentials
-- Change default credentials before deployment
-- Use HTTPS in production
-- Store sensitive data in environment variables only
-- Use `.env.example` as a template for others
-
----
 
 ## Technologies Used
 
