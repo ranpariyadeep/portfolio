@@ -148,25 +148,10 @@ VITE_API_URL=https://your-backend-url.com/api
 
 1. **Clone repository** (without .env files)
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ranpariyadeep/portfolio.git
 ```
 
-2. **Set up environment variables** on your server:
-```bash
-# Backend
-cd Backend
-cp .env.example .env
-# Edit .env with production values
-nano .env
-
-# Frontend
-cd Frontend
-cp .env.example .env
-# Edit .env with production API URL
-nano .env
-```
-
-3. **Install and run backend**:
+2. **Install and run backend**:
 ```bash
 cd Backend
 python3 -m venv venv
@@ -175,7 +160,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-4. **Build and deploy frontend**:
+3. **Build and deploy frontend**:
 ```bash
 cd Frontend
 npm install
@@ -185,7 +170,10 @@ npm run build
 
 ---
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 66b84fa (Update flies)
 ## Technologies Used
 
 - **Frontend**: React 18, Vite, Tailwind CSS, React Router
@@ -196,15 +184,5 @@ npm run build
 
 ---
 
-## License
 
-This project is personal and not licensed for distribution.
 
----
-
-## Author
-
-Deep Ranpariya
-- Email: deepranpariyad@gmail.com
-- GitHub: [@ranpariyadeep](https://github.com/ranpariyadeep)
-- LinkedIn: [@ranpariyadeep](https://www.linkedin.com/in/ranpariyadeep)
