@@ -179,9 +179,9 @@ const Contact = () => {
               <p className="text-emerald-50 mb-4">Get a detailed overview of my experience and skills</p>
               <Button
                 onClick={handleDownloadCV}
-                className="w-full bg-white text-green-600 hover:bg-gray-100 transition-all hover:scale-105"
+                className="w-full bg-white text-green-500 hover:bg-gray-100 transition-all hover:scale-105"
               >
-                <Download className="w-4 h-4 mr-2" />
+                <Download className="w-4 h-4 mr-2 text-green-500" />
                 Download CV (PDF)
               </Button>
             </div>
