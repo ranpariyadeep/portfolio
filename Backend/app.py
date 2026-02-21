@@ -11,15 +11,19 @@ import ssl
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(
+    app,
+    resources={r"/api/*": {"origins": "*"}},  # TODO: replace "*" with your Vercel domain for production
+    allow_headers=["Content-Type", "Authorization"],
+    methods=["GET", "POST", "PATCH", "OPTIONS"],
+)
 
 # Admin credentials (change these!)
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
 
 # MongoDB ConfigurationAdmin Login ====================
-
-@app.route("/api/admin/login", methods=["POST"])
+@app.route("/api/admin/login", methods=["POST", "OPTIONS"])  # ✅ added OPTIONS for preflight
 def admin_login():
     """Admin login endpoint"""
     try:
