@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 from pymongo import MongoClient
 import ssl
+from flask import make_response
 
 load_dotenv()
 
@@ -17,6 +18,15 @@ CORS(
     allow_headers=["Content-Type", "Authorization"],
     methods=["GET", "POST", "PATCH", "OPTIONS"],
 )
+
+@app.before_request
+def handle_preflight():
+    if request.method == "OPTIONS":
+        response = make_response()
+        response.headers["Access-Control-Allow-Origin"] = "*"  # replace with your Vercel domain later
+        response.headers["Access-Control-Allow-Methods"] = "GET, POST, PATCH, OPTIONS"
+        response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
+        return response
 
 # Admin credentials (change these!)
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
