@@ -19,7 +19,7 @@ ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
 
 # MongoDB ConfigurationAdmin Login ====================
 
-@app.route("/api/admin/login", methods=["POST"])
+@app.route("/login", methods=["POST"])
 def admin_login():
     """Admin login endpoint"""
     try:
