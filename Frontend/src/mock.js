@@ -1,3 +1,5 @@
+
+
 export const portfolioData = {
   hero: {
     name: "Deep Ranpariya",
@@ -10,7 +12,7 @@ export const portfolioData = {
   },
   about: {
     description: "I'm a Computer Science student at Technische Hochschule Ingolstadt with a passion for full-stack development. I specialize in building scalable web applications using modern frameworks and technologies. With strong foundations in algorithms, data structures, and software architecture, I create efficient and user-friendly solutions.",
-    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop",
+    image: "deep.png",
     languages: [
       { name: "German", level: "C1 - Fluent" },
       { name: "English", level: "C1 - Fluent" }

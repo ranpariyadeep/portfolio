@@ -32,7 +32,7 @@ const About = () => {
             <img
               src={about.image}
               alt="Deep Ranpariya"
-              className="relative rounded-2xl w-full h-96 object-cover shadow-2xl"
+              className="relative rounded-2xl w-full h-auto object-cover shadow-2xl"
             />
           </div>
 
