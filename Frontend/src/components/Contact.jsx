@@ -179,7 +179,7 @@ const Contact = () => {
               <p className="text-emerald-50 mb-4">Get a detailed overview of my experience and skills</p>
               <Button
                 onClick={handleDownloadCV}
-                className="w-full bg-white bg-emerald-500 hover:bg-gray-100 transition-all hover:scale-105"
+                className="w-full  bg-emerald-500 hover:bg-gray-100 transition-all hover:scale-105"
         
               >
                 <Download className="w-4 h-4 mr-2 " />
